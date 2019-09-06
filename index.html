@@ -1,0 +1,19 @@
+<html>
+</script><script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<body>
+    <a href="#"><img src="https://i.ibb.co/XZqM8rR/aws1243.jpg" alt="aws1243" border="0"></a><br /><br />
+<div id="placehere">
+
+</div>
+<div class="images"></div>
+<script>
+$.getJSON('static/data.json', function(json) {
+    $.each( json, function( key, value ) {
+        $('<a href="#"><img src="' + value + '" border="0"></a><br /><br />').appendTo($('.images'));
+})
+});
+
+
+</script>
+</body>
+</html>
